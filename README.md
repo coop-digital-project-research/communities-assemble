@@ -4,10 +4,15 @@
 
 Middleman is a static site generator using all the shortcuts and tools in modern web development. [Read more about Middleman](https://middlemanapp.com/).
 
+### Run locally
+
 * Install Middleman with `gem install middleman`
-* In the command line use `middleman build`
-* Then, when working use `middleman serve`
-* See your site at `localhost:4567`
+* In the command line use `make run`
+* See your site at [localhost:4567](http://localhost:4567)
+
+### Deploy
+
+* Use `make deploy`
 
 ## This template uses co-op styles
 
