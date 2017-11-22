@@ -1,0 +1,66 @@
+---
+title: Co-op Platform
+---
+
+<nav class="skip-nav">
+  <ul>
+    <li><a href="#main" title="Skip to main content">Skip to content</a></li>
+  </ul>
+</nav>
+
+<div class="app-content">
+  <div class="content-wrapper">
+
+    <header class="wrap header-main header-design-manual">
+      <a class="coop-logo" aria-label="Homepage" href="index.html">
+        <img src="<%= image_path 'assets/images/logos/coop-logo.svg' %>" alt="Co-op">
+      </a>
+    </header>
+
+    <main id="main" class="main">
+      <article class="wrap">
+          <div class="row margin-bh">
+            <div class="column large-7">
+            <!-- YOUR CONTENT STARTS HERE -->
+
+              <h1>
+                How does your group make decisions?
+              </h1>
+
+              <fieldset>
+                  <legend>Choose one or more:</legend>
+                  <label class="block-label">
+                      <input type="checkbox" value="1" name="client[owns_a_business]">Directors who are controlled by shareholders make decisions
+                  </label>
+                  <label class="block-label">
+                      <input type="checkbox" value="1" name="client[owns_agricultural_property]">Directors acting for the community make decisions
+                  </label>
+                  <label class="block-label">
+                      <input type="checkbox" value="1" name="client[owns_foreign_property]">A council appointed by members make decisions
+                  </label>
+                  <label class="block-label">
+                      <input type="checkbox" value="1" name="client[owns_trademarks_or_patents]">A collective of individuals make decisions together
+                  </label>
+                  <p class="or">or</p>
+                  <label class="block-label">
+                      <input type="checkbox" name="client_owns_none_of_the_above" data-none-of-the-above="">I don't know
+                  </label>
+              </fieldset>
+
+              <div class="margin-bq">
+                <a href="appetite" class="btn btn-primary">Next</a>
+              </div>
+
+              <a href="#" class="">Save and come back later</a>
+
+            </div>
+          </div>
+      </article>
+    </main>
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="assets/javascript/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+<script src="assets/javascript/main.js"></script>
