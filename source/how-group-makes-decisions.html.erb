@@ -30,16 +30,20 @@ title: Co-op Platform
               <fieldset>
                   <legend>Choose one or more:</legend>
                   <label class="block-label">
-                      <input type="checkbox" value="1" name="client[owns_a_business]">Directors who are controlled by shareholders make decisions
+                      <input type="checkbox" value="1" name="Limited">Directors who are controlled by shareholders make decisions
+                      <img src="<%= image_path 'images/limited.png' %>" alt="LTD">
                   </label>
                   <label class="block-label">
-                      <input type="checkbox" value="1" name="client[owns_agricultural_property]">Directors acting for the community make decisions
+                      <input type="checkbox" value="1" name="CommunityInterest">Directors acting for the community make decisions
+                      <img src="<%= image_path 'images/community-interest.png' %>" alt="CIC">
                   </label>
                   <label class="block-label">
-                      <input type="checkbox" value="1" name="client[owns_foreign_property]">A council appointed by members make decisions
+                      <input type="checkbox" value="1" name="Co-operative">A council appointed by members make decisions
+                      <img src="<%= image_path 'images/co-op.png' %>" alt="Co-op">
                   </label>
                   <label class="block-label">
-                      <input type="checkbox" value="1" name="client[owns_trademarks_or_patents]">A collective of individuals make decisions together
+                      <input type="checkbox" value="1" name="Unassociated">A collective of individuals make decisions together
+                      <img src="<%= image_path 'images/unassociated.png' %>" alt="Unassociated">
                   </label>
                   <p class="or">or</p>
                   <label class="block-label">
