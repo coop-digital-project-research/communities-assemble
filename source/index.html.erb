@@ -35,7 +35,7 @@ title: Co-op Communities - Assemble
               <ul>
                 <% sitemap.resources.each do |page| %>
                   <% if page.url =~ /\/$/ %>
-                    <li><a href="<%= "#{page.url}" %>"><%= "#{page.url}" %></a></li>
+                    <li><%= link_to page.url, page.url %></li>
                   <% end %>
                 <% end %>
               </ul>
