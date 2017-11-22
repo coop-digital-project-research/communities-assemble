@@ -1,12 +1,6 @@
-# Co-op starter kit
+# Communities 'Assemble'
 
-## How to use this
-
-### Co-op prototyping kit
-
-We're using the [Co-op prototyping kit it](https://github.com/coopdigital/prototype-kit-proof-of-concept) for base Co-op styles.
-
-### Middleman
+## How to use this repo
 
 Middleman is a static site generator using all the shortcuts and tools in modern web development. [Read more about Middleman](https://middlemanapp.com/).
 
@@ -14,6 +8,13 @@ Middleman is a static site generator using all the shortcuts and tools in modern
 * In the command line use `middleman build`
 * Then, when working use `middleman serve`
 * See your site at `localhost:4567`
+
+## This template uses co-op styles
+
+### Co-op prototyping kit
+
+We're using the [Co-op prototyping kit it](https://github.com/coopdigital/prototype-kit-proof-of-concept) for base Co-op styles.
+
 
 ### Co-op Design Manual
 
