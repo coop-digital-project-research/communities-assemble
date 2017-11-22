@@ -12,7 +12,7 @@ Middleman is a static site generator using all the shortcuts and tools in modern
 
 ### Deploy
 
-* Use `make deploy`
+Heroku [automatically deploys](https://dashboard.heroku.com/apps/communities-assemble/deploy) the `master` branch.
 
 ## This template uses co-op styles
 
