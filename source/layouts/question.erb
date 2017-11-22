@@ -1,0 +1,16 @@
+<% wrap_layout :layout do %>
+  <form>
+    <%= yield %>
+
+    <p class="or">or</p>
+    <label class="block-label">
+        <input type="checkbox" name="client_owns_none_of_the_above" data-none-of-the-above="">I don't know
+    </label>
+
+    <div class="margin-bq">
+      <a href="appetite" class="btn btn-primary">Next</a>
+    </div>
+
+    <a href="#" class="">Save and come back later</a>
+  </form>
+<% end %>
