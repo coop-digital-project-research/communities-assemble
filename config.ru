@@ -5,7 +5,7 @@ end
 
 use Rack::Static,
     urls: ['/'],
-    root: './',
+    root: './build',
     index: 'index.html'
 
 run lambda { |_|
