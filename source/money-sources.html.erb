@@ -1,49 +1,18 @@
 ---
+layout: question
 title: Where will the money come from?
 ---
-<nav class="skip-nav">
-  <ul>
-    <li><a href="#main" title="Skip to main content">Skip to content</a></li>
-  </ul>
-</nav>
 
-<div class="app-content">
-  <div class="content-wrapper">
+<h1><%= current_page.data.title %></h1>
 
-    <header class="wrap header-main header-design-manual">
-      <a class="coop-logo" aria-label="Homepage" href="index.html">
-        <img src="<%= image_path 'assets/images/logos/coop-logo.svg' %>" alt="Co-op">
-      </a>
-    </header>
-
-    <main id="main" class="main">
-      <article class="wrap">
-          <div class="row margin-bh">
-            <div class="column large-7">
-
-              <h1><%= current_page.data.title %></h1>
-
-              <form>
-                <fieldset>
-                  <label class="block-label">
-                    <input type="checkbox" /> member subscriptions
-                  </label>
-                  <label class="block-label">
-                    <input type="checkbox" /> donations
-                  </label>
-                  <label class="block-label">
-                    <input type="checkbox" /> being paid for a product or service
-                  </label>
-                  <label class="block-label">
-                    <input type="checkbox" /> Don't know
-                  </label>
-                </fieldset>
-                <button class="btn-primary">Next</button>
-              </form>
-            </div>
-          </div>
-      </article>
-    </main>
-
-  </div>
-</div>
+<fieldset>
+  <label class="block-label">
+    <input type="checkbox" /> member subscriptions
+  </label>
+  <label class="block-label">
+    <input type="checkbox" /> donations
+  </label>
+  <label class="block-label">
+    <input type="checkbox" /> being paid for a product or service
+  </label>
+</fieldset>

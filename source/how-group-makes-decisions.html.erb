@@ -1,66 +1,27 @@
 ---
+layout: question
 title: Co-op Platform
 ---
+<h1>
+  How does your group make decisions?
+</h1>
 
-<nav class="skip-nav">
-  <ul>
-    <li><a href="#main" title="Skip to main content">Skip to content</a></li>
-  </ul>
-</nav>
-
-<div class="app-content">
-  <div class="content-wrapper">
-
-    <header class="wrap header-main header-design-manual">
-      <a class="coop-logo" aria-label="Homepage" href="index.html">
-        <img src="<%= image_path 'assets/images/logos/coop-logo.svg' %>" alt="Co-op">
-      </a>
-    </header>
-
-    <main id="main" class="main">
-      <article class="wrap">
-          <div class="row margin-bh">
-            <div class="column large-7">
-            <!-- YOUR CONTENT STARTS HERE -->
-
-              <h1>
-                How does your group make decisions?
-              </h1>
-
-              <fieldset>
-                  <legend>Choose one or more:</legend>
-                  <label class="block-label">
-                      <input type="checkbox" value="1" name="Limited">Directors who are controlled by shareholders make decisions
-                      <img src="<%= image_path 'images/limited.png' %>" alt="LTD">
-                  </label>
-                  <label class="block-label">
-                      <input type="checkbox" value="1" name="CommunityInterest">Directors acting for the community make decisions
-                      <img src="<%= image_path 'images/community-interest.png' %>" alt="CIC">
-                  </label>
-                  <label class="block-label">
-                      <input type="checkbox" value="1" name="Co-operative">A council appointed by members make decisions
-                      <img src="<%= image_path 'images/co-op.png' %>" alt="Co-op">
-                  </label>
-                  <label class="block-label">
-                      <input type="checkbox" value="1" name="Unassociated">A collective of individuals make decisions together
-                      <img src="<%= image_path 'images/unassociated.png' %>" alt="Unassociated">
-                  </label>
-                  <p class="or">or</p>
-                  <label class="block-label">
-                      <input type="checkbox" name="client_owns_none_of_the_above" data-none-of-the-above="">I don't know
-                  </label>
-              </fieldset>
-
-              <div class="margin-bq">
-                <a href="appetite" class="btn btn-primary">Next</a>
-              </div>
-
-              <a href="#" class="">Save and come back later</a>
-
-            </div>
-          </div>
-      </article>
-    </main>
-
-  </div>
-</div>
+<fieldset>
+    <legend>Choose one or more:</legend>
+    <label class="block-label">
+        <input type="checkbox" value="1" name="Limited">Directors who are controlled by shareholders make decisions
+        <img src="<%= image_path 'images/limited.png' %>" alt="LTD">
+    </label>
+    <label class="block-label">
+        <input type="checkbox" value="1" name="CommunityInterest">Directors acting for the community make decisions
+        <img src="<%= image_path 'images/community-interest.png' %>" alt="CIC">
+    </label>
+    <label class="block-label">
+        <input type="checkbox" value="1" name="Co-operative">A council appointed by members make decisions
+        <img src="<%= image_path 'images/co-op.png' %>" alt="Co-op">
+    </label>
+    <label class="block-label">
+        <input type="checkbox" value="1" name="Unassociated">A collective of individuals make decisions together
+        <img src="<%= image_path 'images/unassociated.png' %>" alt="Unassociated">
+    </label>
+</fieldset>
