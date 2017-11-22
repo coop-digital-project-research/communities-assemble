@@ -17,3 +17,4 @@ activate :deploy do |deploy|
 end
 
 activate :livereload
+activate :asset_hash

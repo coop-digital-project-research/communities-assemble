@@ -3,10 +3,10 @@ use Rack::Auth::Basic, 'Restricted Area' do |username, password|
   [username, password] == %w(fenwick pioneer)
 end
 
-use Rack::Static,
-    urls: ['/'],
-    root: './',
-    index: 'index.html'
+use Rack::TryStatic,
+    :root => "build",
+    :urls => %w[/],
+    :try => ['.html', 'index.html', '/index.html']
 
 run lambda { |_|
   [
