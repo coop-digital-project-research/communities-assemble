@@ -29,6 +29,16 @@ title: Co-op Communities - Assemble
               <p><input class="text" /></p>
 
               <p><a href="proposition" class="btn btn-primary">Seach</a></p>
+              <h1>
+                Pages
+              </h1>
+              <ul>
+                <% sitemap.resources.each do |page| %>
+                  <% if page.url =~ /\/$/ %>
+                    <li><a href="<%= "#{page.url}" %>"><%= "#{page.url}" %></a></li>
+                  <% end %>
+                <% end %>
+              </ul>
 
             </div>
           </div>
