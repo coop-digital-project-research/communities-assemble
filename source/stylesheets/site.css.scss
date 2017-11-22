@@ -1,1 +1,35 @@
 @import "../assets/stylesheets/main.css";
+@import "_colours";
+
+input {
+  &.show-hide {
+    display: none;
+    ~ div.more-info {
+      display: none;
+    }
+    ~ label {
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1rem;
+      color: $button-primary-dark;
+      &:after {
+        content: '▼';
+        position: relative;
+        width: auto;
+        display: inline;
+        font-size: 0.8rem;
+        margin-left: 0.4rem;
+      }
+    }
+    &:checked {
+      ~ div.more-info {
+        display: block;
+      }
+      ~ label {
+        &:after {
+          content: '▲';
+        }
+      }
+    }
+  }
+}
