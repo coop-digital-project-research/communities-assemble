@@ -1,0 +1,41 @@
+---
+title: Co-op Communities - Assemble
+---
+
+<h1>Assemble</h1>
+
+<section id="questions">
+  <% data.questions.questions.each do |question| %>
+    <fieldset class="survey" data-dimension="<%=question.dimension%>">
+      <h2><%= question.title %></h2>
+      <div class="form-scale">
+        <h3><%= question.left %></h3>
+        <h3><%= question.right %></h3>
+        <div class="flexbox">
+          <% (-3..3).to_a.each do |i| %>
+            <label style="float: left;">
+              <span><%= i %></span>
+              <input type="radio" name="<%=question.title%>" value="<%= question.invert_score ? i * -1 : i%>" required="">
+              <div>
+              </div>
+            </label>
+          <% end %>
+        </div>
+      </div>
+    </fieldset>
+  <% end %>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</section>
+
+<section id="response">
+  <h1>Here is what you are</h1>
+  <ul>
+    <% data.questions.dimensions.each do |dimension| %>
+      <li data-dimension="<%=dimension%>">
+        <%= dimension.capitalize %>: <span class="score">0</span>
+      </li>
+    <% end %>
+  </ul>
+  <button class="btn btn-primary" type="submit">Back</button>
+</section>
+

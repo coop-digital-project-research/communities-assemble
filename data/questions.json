@@ -1,0 +1,455 @@
+{
+  "dimensions": [
+    "control", "growth", "money", "democracy"
+  ],
+  "questions" : [
+    {
+      "title": "It’s important to me that everyone has a voice",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Everyone’s contribution should be formally recognized",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I think it’s important that workers and shareholders get dividends for their hard work",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s OK that some people can contribute more than others",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I like to encourage people to take more responsibility within the group",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to be able to meet with the group on a regular basis",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group will follow its own set of agreed rules/guidelines",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group will adopt a pre-set rules",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I’m good at managing groups of people’s time",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s easy to make decisions because we are all friends",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I like working with people who I’m already friends with because it means we get on well",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "When there is disagreement, we’re able to resolve it",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I like to work with people who challenge my ideas",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s important to me that the organisation is bigger than just me",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s important that I have shares in the company.",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The thing that worries me most is the potential for being ousted from my own business by my own board!",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I like to be in control and driving most decisions",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I’m a control freak and like things to be done my way",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to be seen as the figurehead of the group",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s my baby",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I’d like a clear separation between my role as the founder/CEO and a ‘board’",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "Roles and job titles are important",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s important to me that I’m on my own board",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I don’t want to do this on my own",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "Everyone should have a say in how the company is run",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I need to be able to take a step back from the group from time to time",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s important to get other people involved with running the group",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s important to know who ‘owns’ the project",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Community work can be quite isolating",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I want the group to be seen as an example of good practice to other groups",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I want to be able to influence local services provision",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I need people to commit a specific amount of time if they are to join the group",
+      "dimension": "control",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "A big part of how we will raise money will be through donations",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s OK to ask for donations to cover costs",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I think fundraising will be important to us and I want to be able to raise funds on Just Giving",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "I’m going to need a charitable number to help me fundraise",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "My volunteers are going to want to fundraise for us and raise money online",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "My biggest source of income is likely to be through grants",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": true
+    },
+    {
+      "title": "It’s important that I get shares and dividends for my hard work",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s important that my board members get paid",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want beneficiaries on my board, but I don’t want this to exclude them from being paid from specific funding pots",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s important to me that my project can generate its own revenue",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group can only continue with more funding",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want the group to be transparent when dealing with finances",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I see my project being more as a self-financing business with a social goal, rather than a charitable organisation",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s important to me that people know we are a charitable organisation",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "In 10 years time I want the group to be turning over £100,000",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group should raise a charge for providing a service",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group should offer the service free of charge",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to see the funds we generate paying wages, covering capital costs, investing in equipment and donating to another cause",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to share some of the money with a national organization",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Members should pay a regular fee for being part of the group",
+      "dimension": "money",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "It’s likely I’ll be taking on employees soon",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I’m hoping to land some BIG contracts!",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "We’ll be wanting to buy a building soon",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group can only survive if there’s someone with financial expertise",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to be able to take a step back from the group once it is established",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I want to see the group expanding to other locations in the future",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Increasing/attracting new members is important to me",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Employing/paying/being paid to do the work is important to me",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Managing and developing volunteers should be a key part of the group",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I need more time to work on the group if it’s going to succeed in its aims",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "Admin tasks are boring and time consuming",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "I don’t mind it I find myself doing community work in my own time",
+      "dimension": "growth",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    }
+  ]
+}
