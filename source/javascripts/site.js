@@ -1,34 +1,51 @@
 // This is where it all goes :)
 
 $(document).ready(function(){
+  var question_json = $('#questions').data('json');
+
   $('#response').hide();
   $("#questions button").click(function(){
+    calculateScores();
     $('#response').show();
     $('#questions').hide();
   });
   $("#response button").click(function(){
+    $('#myChart').html('');
     $('#response').hide();
     $('#questions').show();
   });
 
-  $("#questions input").change(function(){
-    calculateScores();
-  });
-
   function calculateScores(){
     var scores = {};
+
+    $.each(question_json.dimensions, function(){
+      scores[this] = [];
+    });
+
     $('fieldset input:checked').each(function(){
       var checked_input = $(this);
       var score = parseInt(checked_input.val());
       var dimension = checked_input.parents('fieldset').data('dimension');
-      if(!scores[dimension]){
-        scores[dimension] = 0;
-      }
-      scores[dimension] += score;
+      scores[dimension].push(score);
     });
-    $('#response li').each(function(){
-      var score_holder = $(this);
-      score_holder.find('.score').html(scores[score_holder.data('dimension')] || 0);
+
+    var averaged_dimensions = {};
+    $.each(question_json.dimensions, function(){
+      var final_scores = scores[this];
+      if(!final_scores || final_scores.length == 0){
+        averaged_dimensions[this] = 0;
+      }else{
+        averaged_dimensions[this] = math.mean(final_scores);
+      }
+    });
+
+    var ctx = document.getElementById("myChart");
+    var myRadarChart = new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: Object.keys(averaged_dimensions),
+        datasets: [{data: Object.values(averaged_dimensions)}]
+      }
     });
   }
 
