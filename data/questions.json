@@ -330,21 +330,14 @@
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
-    },
-    {
-      "title": "I want to see the funds we generate paying wages, covering capital costs, investing in equipment and donating to another cause",
-      "dimension": "money",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I want to share some of the money with a national organization",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "Members should pay a regular fee for being part of the group",
@@ -417,13 +410,6 @@
       "invert_score": false
     },
     {
-      "title": "I need more time to work on the group if it’s going to succeed in its aims",
-      "dimension": "growth",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": false
-    },
-    {
       "title": "Admin tasks are boring and time consuming",
       "dimension": "growth",
       "right": "Agree",
@@ -431,7 +417,7 @@
       "invert_score": false
     },
     {
-      "title": "I don’t mind it I find myself doing community work in my own time",
+      "title": "I don’t mind if I find myself doing community work in my own time",
       "dimension": "growth",
       "right": "Agree",
       "left": "Disagree",

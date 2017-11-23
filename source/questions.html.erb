@@ -5,7 +5,7 @@ title: Co-op Communities - Assemble
 <h1>Assemble</h1>
 
 <section id="questions" data-json="<%=escape_html(data.questions.to_json)%>">
-  <% data.questions.questions.each do |question| %>
+  <% data.questions.questions.each.with_index do |question, index| %>
     <fieldset class="survey" data-dimension="<%=question.dimension%>">
       <h2><%= question.title %></h2>
       <div class="form-scale">
@@ -21,6 +21,20 @@ title: Co-op Communities - Assemble
             </label>
           <% end %>
         </div>
+        <section class="dont-know-block">
+          <input id="dont-know-<%= index %>" class="dont-know" type="radio" value="0" name="<%=question.title%>">
+          <label for="dont-know-<%= index %>" class="block-label">I don't know
+          </label>
+          <div class="indented" aria-hidden="false">
+            <label class="block-label">
+                <input type="radio" value="doesnt-apply" name="<%=question.title%>-reason-dont-know">Doesn't apply
+            </label>
+            <label class="block-label">
+                <input type="radio" value="dont-understand" name="<%=question.title%>-reason-dont-know">Don't understand
+            </label>
+          </div>
+        </section>
+      </label>
       </div>
     </fieldset>
   <% end %>
@@ -32,4 +46,3 @@ title: Co-op Communities - Assemble
   <canvas id="myChart"></canvas>
   <button class="btn btn-primary" type="submit">Back</button>
 </section>
-
