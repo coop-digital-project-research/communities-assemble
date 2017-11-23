@@ -22,13 +22,18 @@ $(document).ready(function(){
       var score = parseInt(checked_input.val());
       var dimension = checked_input.parents('fieldset').data('dimension');
       if(!scores[dimension]){
-        scores[dimension] = 0;
+        scores[dimension] = [];
       }
-      scores[dimension] += score;
+      scores[dimension].push(score);
     });
     $('#response li').each(function(){
       var score_holder = $(this);
-      score_holder.find('.score').html(scores[score_holder.data('dimension')] || 0);
+      var final_scores = scores[score_holder.data('dimension')];
+      if(!final_scores || final_scores == []){
+        score_holder.find('.score').html(0);
+      }else{
+        score_holder.find('.score').html(math.mean(final_scores));
+      }
     });
   }
 

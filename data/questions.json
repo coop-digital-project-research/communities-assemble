@@ -437,5 +437,25 @@
       "left": "Disagree",
       "invert_score": false
     }
+  ],
+  "organisation_types": [
+    {
+      "name": "Community interest company",
+      "scores" : {
+        "democracy" : -3,
+        "money" : -3,
+        "control" : -3,
+        "growth" : -3
+      }
+    },
+    {
+      "name": "Charity",
+      "scores" : {
+        "democracy" : 3,
+        "money" : 3,
+        "control" : 3,
+        "growth" : 3
+      }
+    }
   ]
 }
