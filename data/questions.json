@@ -2,6 +2,28 @@
   "dimensions": [
     "control", "growth", "money", "democracy"
   ],
+  "reflections": {
+    "control": {
+      "high": "One person or a small group of people leads your group",
+      "medium": "Your group needs a bit of guidance from time to time",
+      "low": "Your group is made up of individuals who ‘just get on with it’"
+    },
+    "growth": {
+      "high": "Your group want to make a difference to people’s lives everywhere",
+      "medium": "Your group want to make a difference to people’s lives in your part of the country",
+      "low": "Your group want to make a difference to people’s lives in your local area"
+    },
+    "money": {
+      "high": "In order to do anything, your group needs money",
+      "medium": "Money is important to your group, but it isn’t everything",
+      "low": "Your group can run on a shoestring"
+    },
+    "democracy": {
+      "high": "Every member has an equal say in what the group does",
+      "medium": "Members have a say in who makes the decisions",
+      "low": "One visionary leader makes all the decisions, and everyone else follows"
+    }
+  },
   "questions" : [
     {
       "title": "It’s important to me that everyone has a voice",
