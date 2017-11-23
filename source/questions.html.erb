@@ -2,7 +2,7 @@
 title: Co-op Communities - Assemble
 ---
 
-<h1>Take our personality quiz!!!</h1>
+<h1>Assemble</h1>
 
 <section id="questions">
   <% data.questions.questions.each do |question| %>
@@ -14,8 +14,10 @@ title: Co-op Communities - Assemble
         <div class="flexbox">
           <% (-3..3).to_a.each do |i| %>
             <label style="float: left;">
-              <%= i %>
+              <span><%= i %></span>
               <input type="radio" name="<%=question.title%>" value="<%= question.invert_score ? i * -1 : i%>" required="">
+              <div>
+              </div>
             </label>
           <% end %>
         </div>
