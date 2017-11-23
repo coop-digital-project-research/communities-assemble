@@ -1,70 +1,84 @@
 {
+  "dimensions": [
+    "control", "people"
+  ],
   "questions" : [
     {
       "title": "Democracies are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": true
     },
     {
       "title": "Co-operatives are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "People are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Cats are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Dogs are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "The future are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Dividends are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Volunteers are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Thinkers are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Do-ers are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     },
     {
       "title": "Enablers are the way forward",
-      "dimension": "organisation",
+      "dimension": "control",
       "right": "Agree",
-      "left": "Disagree"
+      "left": "Disagree",
+      "invert_score": false
     }
   ]
 }

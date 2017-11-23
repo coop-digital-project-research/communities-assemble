@@ -4,40 +4,36 @@ title: Co-op Communities - Assemble
 
 <h1>Take our personality quiz!!!</h1>
 
-<% data.questions.questions.each do |question| %>
-  <fieldset class="survey" data-dimension="dimension_1">
-    <h2><%= question.title %></h2>
-    <div class="form-scale">
-      <h3><%= question.left %></h3>
-      <h3><%= question.right %></h3>
-      <div class="flexbox">
-        <label>
-          1
-          <input type="radio" name="1" value="1" required="">
-        </label>
-        <label>
-          2
-          <input type="radio" name="2" value="2">
-        </label>
-        <label>
-          3
-          <input type="radio" name="3" value="3">
-        </label>
-        <label>
-          4
-          <input type="radio" name="4" value="4">
-        </label>
-        <label>
-          5
-          <input type="radio" name="5" value="5">
-        </label>
-        <label>
-          6
-          <input type="radio" name="6" value="6">
-        </label>
+<section id="questions">
+  <% data.questions.questions.each do |question| %>
+    <fieldset class="survey" data-dimension="<%=question.dimension%>">
+      <h2><%= question.title %></h2>
+      <div class="form-scale">
+        <h3><%= question.left %></h3>
+        <h3><%= question.right %></h3>
+        <div class="flexbox">
+          <% (-3..3).to_a.each do |i| %>
+            <label style="float: left;">
+              <%= i %>
+              <input type="radio" name="<%=question.title%>" value="<%= question.invert_score ? i * -1 : i%>" required="">
+            </label>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </fieldset>
-<% end %>
+    </fieldset>
+  <% end %>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</section>
 
-<button class="btn btn-primary" type="submit">Submit</button>
+<section id="response">
+  <h1>Here is what you are</h1>
+  <ul>
+    <% data.questions.dimensions.each do |dimension| %>
+      <li data-dimension="<%=dimension%>">
+        <%= dimension.capitalize %>: <span class="score">0</span>
+      </li>
+    <% end %>
+  </ul>
+  <button class="btn btn-primary" type="submit">Back</button>
+</section>
+
