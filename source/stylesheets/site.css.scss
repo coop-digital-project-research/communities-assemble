@@ -36,14 +36,27 @@ input {
 
 
 section.dont-know-block {
+  margin-top: 1rem;
   div.indented {
     display: none;
+    margin-top: 1rem;
+  }
+
+  > label {
+    background: none;
+    display: inline;
+    padding: 0;
   }
 
   input.dont-know {
-    display: none;
-
+    display: inline;
+    float: left;
+    width: auto;
+    margin: 0.7rem 1rem 0 1rem;
     &:checked {
+      ~ label {
+        border-color: rgba(255,255,255,0);
+      }
       ~ div.indented {
         display: block;
       }
@@ -64,6 +77,9 @@ fieldset {
     }
     div {
       &.flexbox {
+        background: #f3f3f3;
+        padding: 1.5rem 0 1rem 0;
+        border-radius: 5px;
         display: flex;
         width: 100%;
         > label {
