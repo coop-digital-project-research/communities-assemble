@@ -29,7 +29,7 @@
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I like to encourage people to take more responsibility within the group",
@@ -57,7 +57,7 @@
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I’m good at managing groups of people’s time",
@@ -71,14 +71,14 @@
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I like working with people who I’m already friends with because it means we get on well",
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "When there is disagreement, we’re able to resolve it",
@@ -92,14 +92,14 @@
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s important to me that the organisation is bigger than just me",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s important that I have shares in the company.",
@@ -117,13 +117,6 @@
     },
     {
       "title": "I like to be in control and driving most decisions",
-      "dimension": "control",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": false
-    },
-    {
-      "title": "I don’t want to be ousted from the committee in years to come",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
@@ -155,7 +148,7 @@
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "Roles and job titles are important",
@@ -176,28 +169,28 @@
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "Everyone should have a say in how the company is run",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
-      "title": "I need to be able to take a step back from the group from time to timee",
+      "title": "I need to be able to take a step back from the group from time to time",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s important to get other people involved with running the group",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s important to know who ‘owns’ the project",
@@ -211,14 +204,14 @@
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I want the group to be seen as an example of good practice to other groups",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I want to be able to influence local services provision",
@@ -239,42 +232,42 @@
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s OK to ask for donations to cover costs",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I think fundraising will be important to us and I want to be able to raise funds on Just Giving",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I’m going to need a charitable number to help me fundraise",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "My volunteers are going to want to fundraise for us and raise money online",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "My biggest source of income is likely to be through grants",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "It’s important that I get shares and dividends for my hard work",
