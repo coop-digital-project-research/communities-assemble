@@ -51,15 +51,92 @@ fieldset {
         > label {
           flex: auto;
           text-align: center;
-          background: #f3f3f3;
-          padding: 1rem 0 1.2rem;
           border-radius: 0.2rem;
+          text-align: center;
+          > div {
+            width: 2rem;
+            height: 2rem;
+            border: 0.2rem grey solid;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          /// Mid Agree/dsagree
+          &:nth-of-type(2),
+          &:nth-of-type(6) {
+            div {
+              width: 1.6rem;
+              height: 1.6rem;
+            }
+          }
+
+          /// Weak/neutral Agree/dsagree
+          &:nth-of-type(3),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            div {
+              width: 1.4rem;
+              height: 1.4rem;
+            }
+          }
+
+          /// Agree
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            input {
+              &:checked {
+                ~ div {
+                  background: $base-meteorite;
+                }
+              }
+            }
+            div {
+              border: 0.2rem $base-meteorite solid;
+            }
+          }
+
+          /// Neutral
+          &:nth-of-type(4) {
+            input {
+              &:checked {
+                ~ div {
+                  background: grey;
+                }
+              }
+            }
+          }
+
+          /// Disagree
+          &:nth-of-type(5),
+          &:nth-of-type(6),
+          &:nth-of-type(7) {
+            input {
+              &:checked {
+                ~ div {
+                  background: $base-oregon;
+                }
+              }
+            }
+            div {
+              border: 0.2rem $base-oregon solid;
+            }
+          }
+
+
           span {
             display: none;
           }
           > input {
+            display: none;
             width: auto;
             margin: auto;
+            &:checked {
+              ~ div {
+                background: black;
+              }
+            }
           }
         }
       }
