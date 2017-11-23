@@ -1,81 +1,88 @@
 {
   "dimensions": [
-    "control", "people"
+    "control", "growth", "money", "democratic"
   ],
   "questions" : [
     {
-      "title": "Democracies are the way forward",
-      "dimension": "control",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": true
-    },
-    {
-      "title": "Co-operatives are the way forward",
-      "dimension": "control",
+      "title": "It’s important to me that everyone has a voice",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "People are the way forward",
-      "dimension": "control",
+      "title": "Everyone’s contribution should be formally recognized",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Cats are the way forward",
-      "dimension": "control",
+      "title": "I think it’s important that workers and shareholders and get dividends for their hard work",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Dogs are the way forward",
-      "dimension": "control",
+      "title": "It’s OK that some people can contribute more than others",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "The future are the way forward",
-      "dimension": "control",
+      "title": "I like to encourage people to take more responsibility within the group",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Dividends are the way forward",
-      "dimension": "control",
+      "title": "I want to be able to meet with the group on a regular basis",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Volunteers are the way forward",
-      "dimension": "control",
+      "title": "The group will follow its own set of agreed rules/guidelines",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "The group will adopt a pre-set rules",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
       "title": "Thinkers are the way forward",
-      "dimension": "control",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Do-ers are the way forward",
-      "dimension": "control",
+      "title": "It’s easy to make decisions because we are all friends",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "Enablers are the way forward",
-      "dimension": "control",
+      "title": "I like working people people who I’m already friends with because it means get on well",
+      "dimension": "democracy",
+      "right": "Agree",
+      "left": "Disagree",
+      "invert_score": false
+    },
+    {
+      "title": "When there is disagreement, we’re able to resolve it",
+      "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
