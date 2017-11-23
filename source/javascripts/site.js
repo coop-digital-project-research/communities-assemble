@@ -39,6 +39,22 @@ $(document).ready(function(){
       }
     });
 
+    $.each(question_json.dimensions, function(){
+      var final_score = averaged_dimensions[this];
+      var paragraph = $("#" + this + "_reflection");
+      if (final_score < -1 ) {
+        paragraph.html(question_json.reflections[this].low);
+      } else if (final_score < 1 ) {
+        paragraph.html(question_json.reflections[this].medium);
+      } else {
+        paragraph.html(question_json.reflections[this].high);
+      }
+    });
+
+    $.each(averaged_dimensions, function() {
+
+    });
+
     var ctx = document.getElementById("myChart");
     var myRadarChart = new Chart(ctx, {
       type: 'radar',
