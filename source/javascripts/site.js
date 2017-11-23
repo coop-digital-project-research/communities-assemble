@@ -60,7 +60,11 @@ $(document).ready(function(){
       type: 'radar',
       data: {
         labels: Object.keys(averaged_dimensions),
-        datasets: [{data: Object.values(averaged_dimensions)}]
+        datasets: [{
+          data: Object.values(averaged_dimensions),
+          label: 'Your results',
+          backgroundColor: 'rgba(255, 99, 132, 0.2)'
+        }]
       }
     });
   }
