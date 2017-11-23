@@ -4,7 +4,7 @@ title: Co-op Communities - Assemble
 
 <h1>Assemble</h1>
 
-<section id="questions">
+<section id="questions" data-json="<%=escape_html(data.questions.to_json)%>">
   <% data.questions.questions.each do |question| %>
     <fieldset class="survey" data-dimension="<%=question.dimension%>">
       <h2><%= question.title %></h2>
@@ -29,13 +29,7 @@ title: Co-op Communities - Assemble
 
 <section id="response">
   <h1>Here is what you are</h1>
-  <ul>
-    <% data.questions.dimensions.each do |dimension| %>
-      <li data-dimension="<%=dimension%>">
-        <%= dimension.capitalize %>: <span class="score">0</span>
-      </li>
-    <% end %>
-  </ul>
+  <canvas id="myChart"></canvas>
   <button class="btn btn-primary" type="submit">Back</button>
 </section>
 
