@@ -1,0 +1,70 @@
+{
+  "questions" : [
+    {
+      "title": "Democracies are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Co-operatives are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "People are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Cats are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Dogs are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "The future are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Dividends are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Volunteers are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Thinkers are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Do-ers are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    },
+    {
+      "title": "Enablers are the way forward",
+      "dimension": "organisation",
+      "right": "Agree",
+      "left": "Disagree"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+---
+title: Co-op Communities - Assemble
+---
+
+<h1>Take our personality quiz!!!</h1>
+
+<% data.questions.questions.each do |question| %>
+  <fieldset class="survey" data-dimension="dimension_1">
+    <h2><%= question.title %></h2>
+    <div class="form-scale">
+      <h3><%= question.left %></h3>
+      <h3><%= question.right %></h3>
+      <div class="flexbox">
+        <label>
+          1
+          <input type="radio" name="1" value="1" required="">
+        </label>
+        <label>
+          2
+          <input type="radio" name="2" value="2">
+        </label>
+        <label>
+          3
+          <input type="radio" name="3" value="3">
+        </label>
+        <label>
+          4
+          <input type="radio" name="4" value="4">
+        </label>
+        <label>
+          5
+          <input type="radio" name="5" value="5">
+        </label>
+        <label>
+          6
+          <input type="radio" name="6" value="6">
+        </label>
+      </div>
+    </div>
+  </fieldset>
+<% end %>
+
+<button class="btn btn-primary" type="submit">Submit</button>
