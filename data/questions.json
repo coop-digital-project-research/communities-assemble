@@ -277,14 +277,7 @@
       "invert_score": false
     },
     {
-      "title": "It’s important that my board members get paid",
-      "dimension": "money",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": false
-    },
-    {
-      "title": "I want beneficiaries on my board, but I don’t want this to exclude them from being paid from specific funding pots",
+      "title": "It’s important that members of the group can get paid",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
@@ -298,18 +291,11 @@
       "invert_score": false
     },
     {
-      "title": "The group can only continue with more funding",
+      "title": "The group can only continue with a new funding source",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
-    },
-    {
-      "title": "I want the group to be transparent when dealing with finances",
-      "dimension": "money",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "I see my project being more as a self-financing business with a social goal, rather than a charitable organisation",
@@ -323,7 +309,7 @@
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
-      "invert_score": false
+      "invert_score": true
     },
     {
       "title": "In 10 years time I want the group to be turning over £100,000",
