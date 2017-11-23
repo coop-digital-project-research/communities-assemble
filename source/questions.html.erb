@@ -21,6 +21,20 @@ title: Co-op Communities - Assemble
             </label>
           <% end %>
         </div>
+        <section class="dont-know-block">
+          <label class="block-label">
+              <input type="radio" value="0" name="<%=question.title%>">I don't know
+          </label>
+          <div class="indented" aria-hidden="false">
+            <label class="block-label">
+                <input type="radio" value="doesnt-apply" name="<%=question.title%>-reason-dont-know">Doesn't apply
+            </label>
+            <label class="block-label">
+                <input type="radio" value="dont-understand" name="<%=question.title%>-reason-dont-know">Don't understand
+            </label>
+          </div>
+        </section>
+      </label>
       </div>
     </fieldset>
   <% end %>
@@ -38,4 +52,3 @@ title: Co-op Communities - Assemble
   </ul>
   <button class="btn btn-primary" type="submit">Back</button>
 </section>
-
