@@ -35,6 +35,22 @@ input {
 }
 
 
+section.dont-know-block {
+  div.indented {
+    display: none;
+  }
+
+  input.dont-know {
+    display: none;
+
+    &:checked {
+      ~ div.indented {
+        display: block;
+      }
+    }
+  }
+}
+
 
 fieldset {
   &.survey {
