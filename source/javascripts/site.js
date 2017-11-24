@@ -51,10 +51,6 @@ $(document).ready(function(){
       }
     });
 
-    $.each(averaged_dimensions, function() {
-
-    });
-
     var ctx = document.getElementById("myChart");
     var myRadarChart = new Chart(ctx, {
       type: 'radar',
@@ -65,6 +61,23 @@ $(document).ready(function(){
           label: 'Your results',
           backgroundColor: 'rgba(255, 99, 132, 0.2)'
         }]
+      },
+      options: {
+        pointDot:false,
+        scale: {
+          ticks: {
+            min: -3,
+            max: 3,
+            stepSize: 6,
+            display: false
+          }
+        },
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: false
+        }
       }
     });
   }
