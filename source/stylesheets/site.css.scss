@@ -198,13 +198,18 @@ label {
 }
 
 .results-panel {
-  background: $offwhite-highlighted-bg;
+  background: rgba($offwhite-highlighted-bg,0.6);
   overflow: hidden;
   margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  canvas#myChart {
+    margin: 4rem 0;
+  }
   .reflection-block {
     background: $white;
     padding: 1rem;
     margin: 1rem;
+    box-sizing: border-box;
     border-radius: 5px;
     img {
     }
