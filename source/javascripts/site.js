@@ -22,6 +22,8 @@ $(document).ready(function(){
     $('#page-' + page_number).show();
   }
 
+  $('.recommendation').hide();
+
   togglePage(page_number);
 
   $('button.next').click(function(){
@@ -53,6 +55,45 @@ $(document).ready(function(){
         averaged_dimensions[this] = math.mean(final_scores);
       }
     });
+
+    console.log(averaged_dimensions['control']);
+    console.log(averaged_dimensions['growth']);
+    console.log(averaged_dimensions['money']);
+    console.log(averaged_dimensions['democracy']);
+
+    if( (averaged_dimensions['control'] <= -2) &&
+        (averaged_dimensions['growth'] >= -1) &&
+        (averaged_dimensions['growth'] <= 1) &&
+        (averaged_dimensions['money'] >= -1) &&
+        (averaged_dimensions['money'] <= 1) &&
+        (averaged_dimensions['democracy'] >= 2)
+      ) {
+      $('.recommendation#co-op').show();
+    };
+
+    if( (averaged_dimensions['control'] >= 1.5) &&
+        (averaged_dimensions['growth'] >= 0) &&
+        (averaged_dimensions['democracy'] <= -1) &&
+        (averaged_dimensions['money'] >= 1)
+      ) {
+      $('.recommendation#ltd-by-shares').show();
+    };
+
+    if( (averaged_dimensions['control'] <= 1) &&
+        (averaged_dimensions['growth'] <= -1) &&
+        (averaged_dimensions['democracy'] >= 1) &&
+        (averaged_dimensions['money'] <= -1)
+      ) {
+      $('.recommendation#charity').show();
+    };
+
+    if( (averaged_dimensions['control'] >= 1.5) &&
+        (averaged_dimensions['growth'] >= 1.5) &&
+        (averaged_dimensions['democracy'] >= 1.5) &&
+        (averaged_dimensions['money'] >= 1.5)
+      ) {
+      $('.recommendation#cic').show();
+    };
 
     $.each(question_json.dimensions, function(){
       var final_score = averaged_dimensions[this];
