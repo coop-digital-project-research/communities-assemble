@@ -196,3 +196,16 @@ label {
     font-size: 1.4rem;
   }
 }
+
+.results-panel {
+  background: $offwhite-highlighted-bg;
+  overflow: hidden;
+  .reflection-block {
+    background: $white;
+    padding: 1rem;
+    margin: 1rem;
+    img {
+    }
+  }
+
+}
