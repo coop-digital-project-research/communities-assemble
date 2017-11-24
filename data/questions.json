@@ -9,14 +9,14 @@
       "low": "Your group is made up of individuals who ‘just get on with it’"
     },
     "growth": {
-      "high": "Your group want to make a difference to people’s lives everywhere",
-      "medium": "Your group want to make a difference to people’s lives in your part of the country",
-      "low": "Your group want to make a difference to people’s lives in your local area"
+      "high": "Your main focus is attracting private investment of funds into your group",
+      "medium": "You may want to grow in the future, but attracting investors isn’t your priority",
+      "low": "You’re happy to accept some restrictions on making money"
     },
     "money": {
-      "high": "In order to do anything, your group needs money",
-      "medium": "Money is important to your group, but it isn’t everything",
-      "low": "Your group can run on a shoestring"
+      "high": "Entrepreneurial in spirit, you create your own revenue streams and aren’t reliant on funding or donations. Getting paid for your work is important",
+      "medium": "Your group gets some funding and has some independent revenue streams. It’s a mix of a few paid people and volunteers",
+      "low": "Your group is mainly funded by charitable donations, and run through volunteer effort"
     },
     "democracy": {
       "high": "Every member has an equal say in what the group does",
