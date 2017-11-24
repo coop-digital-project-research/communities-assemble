@@ -4,7 +4,7 @@ $(document).ready(function(){
   var question_json = $('#questions').data('json');
 
   $('#response').hide();
-  $("#questions button").click(function(){
+  $("#submit").click(function(){
     calculateScores();
     $('#response').show();
     $('#questions').hide();
@@ -14,6 +14,21 @@ $(document).ready(function(){
     $('#response').hide();
     $('#questions').show();
   });
+
+  var page_number = 1
+
+  function togglePage(page_number){
+    $('.pages').hide();
+    $('#page-' + page_number).show();
+  }
+
+  togglePage(page_number);
+
+  $('button.next').click(function(){
+    page_number++;
+    togglePage(page_number);
+    window.scrollTo(0, 0);
+  })
 
   function calculateScores(){
     var scores = {};
