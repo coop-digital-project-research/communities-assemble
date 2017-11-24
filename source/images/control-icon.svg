@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>control-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="control-icon">
+            <path d="M40,40 L40,20 L20,20 L20,40 L40,40 Z M42,44 L16,44 L16,42 L16,16 L18,16 L44,16 L44,18 L44,44 L42,44 Z M30,33 C28.3431458,33 27,31.6568542 27,30 C27,28.3431458 28.3431458,27 30,27 C31.6568542,27 33,28.3431458 33,30 C33,31.6568542 31.6568542,33 30,33 Z" id="Combined-Shape" fill="#1C3B6B"></path>
+            <circle id="Oval-2" stroke="#1C3B6B" stroke-width="4" cx="30" cy="30" r="28"></circle>
+        </g>
+    </g>
+</svg>
