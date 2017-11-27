@@ -2,7 +2,10 @@
 use Rack::Static,
     urls: ['/'],
     root: './build',
-    index: 'index.html'
+    index: 'index.html',
+    header_rules: [
+      [:all, {'Cache-Control' => 'public, max-age=0'}]
+    ]
 
 run lambda { |_|
   [
