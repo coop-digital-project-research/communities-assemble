@@ -448,21 +448,39 @@
   ],
   "organisation_types": [
     {
-      "name": "Community interest company",
+      "name": "co-op",
       "scores" : {
-        "democracy" : -3,
-        "money" : -3,
-        "control" : -3,
-        "growth" : -3
+        "democracy" : 2.5,
+        "money" : 0,
+        "control" : -2.5,
+        "growth" : 0
       }
     },
     {
-      "name": "Charity",
+      "name": "ltd-by-shares",
       "scores" : {
-        "democracy" : 3,
-        "money" : 3,
-        "control" : 3,
-        "growth" : 3
+        "democracy" : -2,
+        "money" : 2,
+        "control" : 2.25,
+        "growth" : 1.5
+      }
+    },
+    {
+      "name": "charity",
+      "scores" : {
+        "democracy" : 2,
+        "money" : -2,
+        "control" : -1,
+        "growth" : -2
+      }
+    },
+    {
+      "name": "cic",
+      "scores" : {
+        "democracy" : 2.25,
+        "money" : 2.25,
+        "control" : 2.25,
+        "growth" : 2.25
       }
     }
   ]

@@ -55,45 +55,27 @@ $(document).ready(function(){
         averaged_dimensions[this] = math.mean(final_scores);
       }
     });
+    console.log(averaged_dimensions);
 
-    console.log(averaged_dimensions['control']);
-    console.log(averaged_dimensions['growth']);
-    console.log(averaged_dimensions['money']);
-    console.log(averaged_dimensions['democracy']);
+    var scores = {};
+    var winning_score = 9999999;
+    var winner = null;
 
-    if( (averaged_dimensions['control'] <= -2) &&
-        (averaged_dimensions['growth'] >= -1) &&
-        (averaged_dimensions['growth'] <= 1) &&
-        (averaged_dimensions['money'] >= -1) &&
-        (averaged_dimensions['money'] <= 1) &&
-        (averaged_dimensions['democracy'] >= 2)
-      ) {
-      $('.recommendation#co-op').show();
-    };
-
-    if( (averaged_dimensions['control'] >= 1.5) &&
-        (averaged_dimensions['growth'] >= 0) &&
-        (averaged_dimensions['democracy'] <= -1) &&
-        (averaged_dimensions['money'] >= 1)
-      ) {
-      $('.recommendation#ltd-by-shares').show();
-    };
-
-    if( (averaged_dimensions['control'] <= 1) &&
-        (averaged_dimensions['growth'] <= -1) &&
-        (averaged_dimensions['democracy'] >= 1) &&
-        (averaged_dimensions['money'] <= -1)
-      ) {
-      $('.recommendation#charity').show();
-    };
-
-    if( (averaged_dimensions['control'] >= 1.5) &&
-        (averaged_dimensions['growth'] >= 1.5) &&
-        (averaged_dimensions['democracy'] >= 1.5) &&
-        (averaged_dimensions['money'] >= 1.5)
-      ) {
-      $('.recommendation#cic').show();
-    };
+    $.each(question_json.organisation_types, function(index, organisation_type){
+      var distance = 0;
+      $.each(organisation_type.scores, function(key, value){
+        distance += math.abs(value - averaged_dimensions[key])
+      });
+      scores[organisation_type.name] = distance
+      if(distance < winning_score){
+        winning_score = distance;
+        winner = organisation_type.name
+      }
+    });
+    console.log(scores);
+    if(winner){
+      $('.recommendation#'+winner).show();
+    }
 
     $.each(question_json.dimensions, function(){
       var final_score = averaged_dimensions[this];
@@ -106,6 +88,8 @@ $(document).ready(function(){
         paragraph.html(question_json.reflections[this].high);
       }
     });
+
+
 
     var ctx = document.getElementById("myChart");
     var myRadarChart = new Chart(ctx, {
@@ -136,6 +120,9 @@ $(document).ready(function(){
         }
       }
     });
+
+    window.scrollTo(0, 0);
+
   }
 
 });
