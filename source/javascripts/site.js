@@ -1,5 +1,3 @@
-// This is where it all goes :)
-
 $(document).ready(function(){
   var question_json = $('#questions').data('json');
 
