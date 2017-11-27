@@ -1,6 +1,25 @@
 @import "../assets/stylesheets/main.css";
 @import "_colours";
 
+.proposition-decoration {
+  margin: 2rem 0;
+  overflow: hidden;
+  img {
+    margin-right: 1rem;
+    float: left;
+    &:nth-of-type(1) {
+      margin-top: 1rem;
+    }
+    &:nth-of-type(2) {
+      margin-top: 2rem;
+    }
+    &:nth-of-type(4) {
+      margin-top: 2rem;
+      margin-right: 0;
+    }
+  }
+}
+
 input {
   &.show-hide {
     display: none;
@@ -218,4 +237,8 @@ label {
     }
   }
 
+}
+
+section.recommendations-block {
+    margin: 4rem 0;
 }
