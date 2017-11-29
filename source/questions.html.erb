@@ -3,49 +3,48 @@ title: Co-op Communities - Assemble
 ---
 
 <section id="questions" data-json="<%=escape_html(data.questions.to_json)%>">
-  <% data.questions.questions.shuffle.each.with_index do |question, index| %>
-    <% if index.divmod(6)[1] == 0 %>
-      <div id="page-<%= index.divmod(6).first + 1 %>" class="pages">
-    <% end %>
-    <fieldset class="survey" data-dimension="<%=question.dimension%>">
-      <h2><%= question.title %></h2>
-      <div class="form-scale">
-        <h3><%= question.left %></h3>
-        <h3><%= question.right %></h3>
-        <div class="flexbox">
-          <% (-3..3).to_a.each do |i| %>
-            <label style="float: left;">
-              <span><%= i %></span>
-              <input type="radio" name="<%=question.title%>" value="<%= question.invert_score ? i * -1 : i%>" required="">
-              <div>
+  <% groups = data.questions.questions.shuffle.each_slice(6).to_a %>
+  <% groups.each.with_index do |group, index| %>
+    <div id="page-<%= index %>" class="pages">
+      <% group.each do |question| %>
+        <fieldset class="survey" data-dimension="<%=question.dimension%>">
+          <h2><%= question.title %></h2>
+          <div class="form-scale">
+            <h3><%= question.left %></h3>
+            <h3><%= question.right %></h3>
+            <div class="flexbox">
+              <% (-3..3).to_a.each do |i| %>
+                <label style="float: left;">
+                  <span><%= i %></span>
+                  <input type="radio" name="<%=question.title%>" value="<%= question.invert_score ? i * -1 : i%>" required="" class="scored-answer">
+                  <div>
+                  </div>
+                </label>
+              <% end %>
+            </div>
+            <section class="dont-know-block">
+              <input id="dont-know-<%= index %>" class="dont-know" type="radio" value="0" name="<%=question.title%>">
+              <label for="dont-know-<%= index %>" class="block-label">I don't know
+              </label>
+              <div class="indented" aria-hidden="false">
+                <label class="block-label">
+                    <input type="radio" value="doesnt-apply" name="<%=question.title%>-reason-dont-know">Doesn't apply
+                </label>
+                <label class="block-label">
+                    <input type="radio" value="dont-understand" name="<%=question.title%>-reason-dont-know">Don't understand
+                </label>
               </div>
-            </label>
-          <% end %>
-        </div>
-        <section class="dont-know-block">
-          <input id="dont-know-<%= index %>" class="dont-know" type="radio" value="0" name="<%=question.title%>">
-          <label for="dont-know-<%= index %>" class="block-label">I don't know
+            </section>
           </label>
-          <div class="indented" aria-hidden="false">
-            <label class="block-label">
-                <input type="radio" value="0" name="<%=question.title%>-reason-dont-know">Doesn't apply
-            </label>
-            <label class="block-label">
-                <input type="radio" value="0" name="<%=question.title%>-reason-dont-know">Don't understand
-            </label>
           </div>
-        </section>
-      </label>
-      </div>
-    </fieldset>
-    <% if index.divmod(6)[1] == 5 %>
-      <% if index == data.questions.questions.size - 1 %>
+        </fieldset>
+      <% end %>
+      <% if group == groups.last %>
         <button class="btn btn-primary" type="submit" id="submit">Submit</button>
       <% else %>
         <button class="btn btn-primary next">Next</button>
       <% end %>
-      </div>
-    <% end %>
+    </div>
   <% end %>
 </section>
 
