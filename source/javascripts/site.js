@@ -37,7 +37,7 @@ $(document).ready(function(){
       scores[this] = [];
     });
 
-    $('fieldset input:checked').each(function(){
+    $('fieldset input.scored-answer:checked').each(function(){
       var checked_input = $(this);
       var score = parseInt(checked_input.val());
       var dimension = checked_input.parents('fieldset').data('dimension');
