@@ -271,13 +271,6 @@
       "invert_score": true
     },
     {
-      "title": "I’m going to need a charitable number to help me fundraise",
-      "dimension": "money",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": true
-    },
-    {
       "title": "My volunteers are going to want to fundraise for us and raise money online",
       "dimension": "money",
       "right": "Agree",
