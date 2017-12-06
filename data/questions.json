@@ -33,14 +33,14 @@
       "invert_score": false
     },
     {
-      "title": "Everyone’s contribution should be formally recognized",
+      "title": "It's important that people who help out get thanked, and that their contribution is acknowledged",
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
       "invert_score": false
     },
     {
-      "title": "I think it’s important that workers and shareholders get dividends for their hard work",
+      "title": "I think it’s important that people who do work for the group, and people who invest money in the group should receive a share of any profits the group makes",
       "dimension": "democracy",
       "right": "Agree",
       "left": "Disagree",
@@ -166,7 +166,7 @@
       "invert_score": false
     },
     {
-      "title": "I’d like a clear separation between my role as the founder/CEO and a ‘board’",
+      "title": "I don’t want to have the last say about what the group does or how it does it.",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
@@ -236,7 +236,7 @@
       "invert_score": true
     },
     {
-      "title": "I want to be able to influence local services provision",
+      "title": "I want to be able to be paid to provide services on behalf of the local authority",
       "dimension": "control",
       "right": "Agree",
       "left": "Disagree",
@@ -264,14 +264,7 @@
       "invert_score": true
     },
     {
-      "title": "I think fundraising will be important to us and I want to be able to raise funds on Just Giving",
-      "dimension": "money",
-      "right": "Agree",
-      "left": "Disagree",
-      "invert_score": true
-    },
-    {
-      "title": "I’m going to need a charitable number to help me fundraise",
+      "title": "I think fundraising will be important to us and I want to be able to use a fundaising website like Just Giving to ask for donations",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
@@ -327,7 +320,7 @@
       "invert_score": false
     },
     {
-      "title": "It’s important to me that people know we are a charitable organisation",
+      "title": "It’s important to me that people know that we have charity status",
       "dimension": "money",
       "right": "Agree",
       "left": "Disagree",
