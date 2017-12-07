@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('#get-started').click(function(){
     var group_name = $('#group-name').val();
     setCookie('group-name', group_name, 7)
-    window.location.href = "/questions"
+    window.location.href = "/questions/"
   });
 
   $('.group-name').text(getCookie('group-name'));
